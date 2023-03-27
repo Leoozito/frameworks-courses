@@ -1,0 +1,34 @@
+# Comando para inicializar o DJANGO
+
+# Para criar a venv
+# # python3 -m venv nomedapasta
+
+# Para ativar a venv
+# # source nomedapasta/bin/activate
+
+# Para desativar a venv
+# # deactivate
+
+# Para ver todas dependencias
+# # pip freez e
+
+# Depois né instalado o Django
+# # pip install 
+
+# é criado uma pasta e dentro desta pasta, é colocada outra pasta com arquivos do django-admin
+# # django-admin startproject nomedapasta
+# ------------------------------------------------------------------------------------------------------
+
+# para rodar o server
+# # python3 manage.py startapp nomedapasta
+# # python3 manage.py runserver
+
+# cria uma tabela no DB
+# # python3 manage.py migrate
+# # python3 manage.py makemigrations
+
+# para mexer na tela admin
+# digitando na URL <http://127.0.0.1:8000/admin/>
+
+# para criar um usuario que acesse o admin
+# # python3 manage.py createsuperuser

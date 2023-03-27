@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9e2727;
+    height: 150px;
+    margin-top: 2em;
+    border-top: 3px solid rgb(54, 32, 29);
+    color: #fff
+}
+
+.footer span {
+    font-weight: bold;
+}

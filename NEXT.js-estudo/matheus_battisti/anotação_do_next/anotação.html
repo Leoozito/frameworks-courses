@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <style>
+        body {
+            background-color: rgb(41, 40, 40);
+            color:rgb(255, 255, 255);
+            text-align: center
+        }
+        ul, ol {
+            text-align: left;
+        }
+        strong {
+            color:orangered
+        }
+    </style>
+</head>
+<body>
+    <h1> NEXT.js</h1>
+    <hr>
+    <p>O que é <strong>npx </strong>: É um executor de pacotes de npm (serviço de hospedagem), ou seja, tem pacotes salvos pelas pessoas la no npm registry,e a gente tem a possibilidade de que por meio de um comando executar os pacotes.</p>
+    <p>Resgatando dados dinâmicos: para pegar dados dinâmicos vamos precisar da função <strong>getStaticProps</strong>, utilizamos na própria página para os dados serem exibidos, função própria do next.<br> O <strong>getStaticPaths</strong>onde tem a geração dinâmica de paginas</p>
+    <p>API ( Application Programming Interface) é uma interface que funciona como pontes, transportando dados entre um cliente e um servidor.</p>
+    <hr>
+    <h2>Pastas do next</h2>
+    <p>Pasta <strong>node_modules</strong> é integrada em projetos que envolva npm, onde nela tem todas as depedencias, tudo que a gente executa no repositorio chama algo que está dentro desta pasta</p> 
+    <p> O <strong>package.json</strong> como se fosse a config. geral do projeto, lá tem o nome do projeto e as dependencias. Qualquer projeto que seja criado com npm vai ter package.json</p> 
+    <p>A pasta <strong>.next</strong>é meio que uma pasta oculta, nosso projeto é gerado nela, por meio de mais pastas dentro dela.</p> 
+    <p>Pasta <strong>pages</strong>, todo arquivo que sai de pages ele cria uma nova página, uma nova rota,então todo visual do chrome sai por meio de pastas e arquivos de lá</p>
+    <p>Também é ensinado que é importante criar uma <strong>pasta components</strong>, para adicionar os componentes criado que poderão ser reutilizados (ou seja ser usado em mais de uma page), e manter essa pasta separada da pasta "page"</p>
+    <p>Na pasta <strong>styles</strong> pode se criar um arquivo css</p>
+    <p>Pasta <strong>public</strong> onde se coloca imagens, icones.</p>
+    <hr>
+    <h2>Comandos</h2>
+    <ul>
+        <li><strong>npx create-next-app &lt;nome do projeto&gt; </strong>: para criar a base do projeto </li>
+        <li><strong>npm run dev</strong> : roda o projeto inteiro</li>
+        <li><strong>npm run build </strong>: se deleta a pasta next. para não ser gerada com o build, e se tiver algum erro com o build , ele ira ser parado, para não ter o risco de colocar algo em produção que não está correto, essa função mostra detalhes sobre nossas pages, quais que são estaticos , quais que são dinamicos, conseguimos ver quantas páginas tem, o tamanho dos arquivos</li> 
+        <li><strong>npm run start</strong> : para ver o que será visto, ele roda o que ta dentro da pasta .next, faz com que mostre as paginas pré renderizada sem tempo de loagind (antes de rodar o start tem que buildar</li>
+        
+        <li>Usando o código import Link (ou Image e outros{pesquisando o que vai com import}) from 'next/link' na aprte superior da para se criar um link para a pagina</li>
+        <li>Para caso quisermos adicionar mais de um elemento no export default, é só usar os parenteses e rfagmentos vazios ( &lt; &gt; &lt; / &gt; ) </li> 
+    </ul>
+    <hr>
+    <h2>Componente de Layout</h2>
+    <p>Quando replicamos diversos componentes em um unico componente para que ele replique este que a gente escolheu em todas as pag do sistema. <br> Temos o arquivo "MainContainer.js" que com os códigos </p>
+    <hr>
+    <p> * estudar "DEBUG"</p>
+    <hr>
+    <h1>Promises JS</h1>
+    <p>Quando queremos resolver uma promessa, ou seja, verificou que ta tudo certo e que pode continuar, se usa o "resolve", e se verificou e deu erro usar o "reject" <br> o then para dar continuidade a um dado, ou seja, no projeto se usa muito then</p>
+</body>
+</html>

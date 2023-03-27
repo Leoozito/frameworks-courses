@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LOGIN</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style> 
+            body{
+                background-color: gray
+            }
+        </style>
+    </head>
+    <body>
+        {% if status == '1' %}
+            <h1>Seja bem-vindo {{nome_usuario}}</h1>
+        {% endif %}
+        {% if status == '2' %}
+            <h1>Houve um erro</h1>
+        {% endif %}
+
+        <form method="POST" action="{% url 'salvar'%}">{% csrf_token %}
+            <input type="text" placeholder="nome" name="nome"/>
+            <input type="text" placeholder="sobrenome" name="sobrenome"/>
+            <input type="number" placeholder="idade" name="idade"/>
+            <input type="submit">
+        </form> 
+    </body>
+</html>

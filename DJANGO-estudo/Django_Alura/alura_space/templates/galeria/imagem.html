@@ -1,0 +1,20 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+<div class="pagina-inicial">
+    <section class="conteudo">
+        <section class="imagem">
+            <div class="imagem__conteudo">
+                <img class="imagem__imagem" src="{% static '/assets/imagens/galeria/' %}{{fotografia.foto}}">
+                <div class="imagem__info">
+                    <div class="imagem__texto">
+                        <p class="imagem__titulo">{{fotografia.nome}}</p>
+                        <p class="imagem__descricao">{{fotografia.legenda}}</p>
+                        <p class="imagem__texto">{{fotografia.descricao}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+{% endblock %}
