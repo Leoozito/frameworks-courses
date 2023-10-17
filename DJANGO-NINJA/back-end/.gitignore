@@ -1,0 +1,174 @@
+# Criado por https://www.toptal.com/developers/gitignore/api/django
+# Edite em https://www.toptal.com/developers/gitignore?templates=django
+
+###Django###
+*.registro
+*.Panela
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+meios de comunicação
+
+# Se o seu processo de construção inclui a execução de collectstatic, então você provavelmente não precisa ou deseja incluir staticfiles/
+# no seu repositório Git. Atualize e descomente a linha a seguir de acordo.
+# <nome-do-projetodjango>/staticfiles/
+
+### Pilha Django.Python ###
+# Arquivos compilados/otimizados/DLL em bytes
+*.py[código]
+*$py.class
+
+# Extensões C
+*.então
+
+# Distribuição/embalagem
+.Pitão
+construir/
+desenvolver-ovos/
+dist/
+Transferências/
+ovos/
+.ovos/
+biblioteca/
+lib64/
+peças/
+sdist/
+var/
+rodas/
+compartilhar/rodas python/
+*.egg-info/
+.instalado.cfg
+*.ovo
+MANIFESTO
+
+# PyInstaller
+# Geralmente esses arquivos são escritos por um script python a partir de um modelo
+# antes do PyInstaller construir o exe, para injetar data/outras informações nele.
+*.manifesto
+*.especificação
+
+# Logs do instalador
+pip-log.txt
+pip-delete-este-diretório.txt
+
+# Relatórios de teste/cobertura de unidade
+htmlcov/
+.tox/
+.nox/
+.cobertura
+.cobertura.*
+.cache
+nariztestes.xml
+cobertura.xml
+*.cobrir
+*.py,capa
+.hipótese/
+.pytest_cache/
+cobrir/
+
+# Traduções
+*.mo
+
+# Coisas do Django:
+
+# Material do frasco:
+instância/
+.webassets-cache
+
+# Coisas raspadas:
+.scrapy
+
+# Documentação da Esfinge
+documentos/_build/
+
+# PyBuilder
+.pybuilder/
+alvo/
+
+# Caderno Jupyter
+.ipynb_checkpoints
+
+# IPython
+perfil_padrão/
+ipython_config.py
+
+#pyenv
+# Para uma biblioteca ou pacote, você pode ignorar esses arquivos, pois o código é
+# destinado a ser executado em vários ambientes; caso contrário, verifique-os:
+# .python-versão
+
+#pipenv
+# De acordo com pypa/pipenv#598, é recomendado incluir Pipfile.lock no controle de versão.
+# No entanto, em caso de colaboração, se houver dependências ou dependências específicas da plataforma
+# não tendo suporte multiplataforma, o pipenv pode instalar dependências que não funcionam ou não
+#instale todas as dependências necessárias.
+#Pipfile.lock
+
+#poesia
+# Semelhante ao Pipfile.lock, geralmente é recomendado incluir poesia.lock no controle de versão.
+# Isto é especialmente recomendado para pacotes binários para garantir a reprodutibilidade, e é mais
+# comumente ignorado em bibliotecas.
+# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poesia.lock
+
+#pdm
+# Semelhante ao Pipfile.lock, geralmente é recomendado incluir pdm.lock no controle de versão.
+#pdm.lock
+# O pdm armazena configurações de todo o projeto em .pdm.toml, mas é recomendado não incluí-lo
+# no controle de versão.
+# https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+#PEP 582; usado por, por exemplo, github.com/David-OConnor/pyflow e github.com/pdm-project/pdm
+__pypacotes__/
+
+# Coisas de aipo
+programação de aipo
+aipo.pid
+
+# SageMath analisou arquivos
+*.sage.py
+
+# Ambientes
+.env
+.venv
+ambiente/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+#Configurações do projeto Spyder
+.spyderproject
+.spyproject
+
+# Configurações do projeto de corda
+.ropeproject
+
+#documentação mkdocs
+/site
+
+# meupy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Verificador de tipo de pira
+.pira/
+
+# analisador de tipo estático pytype
+.pytype/
+
+# Símbolos de depuração Cython
+cython_debug/
+
+# PyCharm
+# O modelo específico do JetBrains é mantido em um JetBrains.gitignore separado que pode
+# pode ser encontrado em https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+# e pode ser adicionado ao gitignore global ou mesclado neste arquivo. Por um ambiente mais nuclear
+# opção (não recomendada), você pode descomentar o seguinte para ignorar toda a pasta de ideias.
+#.ideia/
+
+# Fim de https://www.toptal.com/developers/gitignore/api/django
