@@ -1,7 +1,6 @@
+from cadastro.api import router as cadastro_router
 from ninja import NinjaAPI
 
 api = NinjaAPI()
 
-@api.get("filmes/")
-def hello(request):
-    return "IUJERFBUOFEBUFEBUFEBUI"
+api.add_router("cadastros/", cadastro_router)
