@@ -1,5 +1,5 @@
 """
-ASGI config for myapirest project.
+ASGI config for conf_myapirest project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myapirest.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'conf_myapirest.settings')
 
 application = get_asgi_application()
