@@ -1,0 +1,5 @@
+Olá {{name|safe}}
+Aqui é uma cópia do seu review:
+{{review|safe}}
+
+Thank you!
