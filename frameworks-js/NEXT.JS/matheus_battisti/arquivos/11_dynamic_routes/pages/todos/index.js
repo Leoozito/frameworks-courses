@@ -5,8 +5,6 @@ export async function getStaticProps() {
 
     const todos = await data.json()
 
-    // console.log(todos)
-
     return {
         props: {todos}
     }

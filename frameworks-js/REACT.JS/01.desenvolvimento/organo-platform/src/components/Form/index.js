@@ -2,7 +2,7 @@ import './Form.css'
 import Input from '../Input';
 import DropdownList from '../DropdownList';
 import Button from '../Button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Form(props) {
         
@@ -11,8 +11,10 @@ export default function Form(props) {
     const [imagem, setImagem] = useState("")
     const [time, setTime] = useState("")
 
-    const Salvar = () => {
-        props.adicionaNovoColaborador({
+    const Salvar = (e) => {
+        e.preventDefault();
+
+        props.colaboradorCadastrados({
             nome,
             cargo,
             imagem,

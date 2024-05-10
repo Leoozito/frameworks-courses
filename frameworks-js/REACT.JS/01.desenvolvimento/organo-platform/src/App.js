@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Banner from './components/Banner';
 import Form from './components/Form';
 import SectionCardsTeam from './components/SectionCardsTeam';
@@ -47,14 +47,19 @@ function App() {
   return (
     <>
       <Banner/>
-        <Form
-          times={teams_tech.map(team => team.nome)
-          }
-          colaboradorCadastrados={colaborador => adicionaNovoColaborador(colaborador)}
-        />
+      <Form
+        times={teams_tech.map(team => team.nome)}
+        colaboradorCadastrados={colaborador => adicionaNovoColaborador(colaborador)}
+      />
 
       {teams_tech.map(team => 
-        <SectionCardsTeam title={team.nome} corPrimaria={team.corPrimaria} corSecundaria={team.corSecundaria}/>
+        <SectionCardsTeam 
+          key={team.nome}
+          title={team.nome} 
+          corPrimaria={team.corPrimaria} 
+          corSecundaria={team.corSecundaria} 
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === team.nome)}
+        />
       )}
     </>
   );
