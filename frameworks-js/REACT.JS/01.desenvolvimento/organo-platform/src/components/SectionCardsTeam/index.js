@@ -1,3 +1,4 @@
+import CardsTeams from '../CardsTeams';
 import './SectionCardsTeam.css'
 
 const SectionCardsTeam = (props) => {
@@ -5,9 +6,7 @@ const SectionCardsTeam = (props) => {
         <section className="background-structure-cards" style={{backgroundColor : props.corSecundaria}}>
 
             <h3 style={{borderColor: props.corPrimaria}}>{props.title}</h3>
-            <div>
-                
-            </div>
+            <CardsTeams/>
         </section>
     )
 }
