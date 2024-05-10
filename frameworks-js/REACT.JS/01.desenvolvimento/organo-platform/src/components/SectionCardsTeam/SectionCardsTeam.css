@@ -1,0 +1,18 @@
+.background-structure-cards {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-structure-cards h3 {
+    font-size: 12px;
+    font-weight: 600px;
+    border-bottom: 4px solid;
+    padding: 8px;
+    display: inline-block;
+}
+
+.cards {
+
+}
