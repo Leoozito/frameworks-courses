@@ -47,9 +47,11 @@ function App() {
   return (
     <>
       <Banner/>
-      <Form 
-        colaboradorCadastrados={colaborador => adicionaNovoColaborador(colaborador)}
-      />
+        <Form
+          times={teams_tech.map(team => team.nome)
+          }
+          colaboradorCadastrados={colaborador => adicionaNovoColaborador(colaborador)}
+        />
 
       {teams_tech.map(team => 
         <SectionCardsTeam title={team.nome} corPrimaria={team.corPrimaria} corSecundaria={team.corSecundaria}/>
