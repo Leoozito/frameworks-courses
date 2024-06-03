@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+## Codigos e anotações de aprendizados
+## "01 - REACT- Desenvolvendo com JavaScript"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Exemplo utilizando **.map()** & **.filter()** :
 
-## Available Scripts
+O **.map()** é possível percorrer todos os item do array, executar alguma transformação nesses itens e retornar um novo array sem modificar o atual.
 
-In the project directory, you can run:
+```js
+const exibeInformacoes = empresas.map( empresa => `${empresa.nome}` + ' CEO: ' + `${empresa.ceo}`);
+console.log( exibeInformacoes )
+```
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O **.filter()** vai percorrer todo o array e criar um novo com todos os elementos que passaram no teste, da condição proposta.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```js
+const anoDeCriacao = empresas.filter(empresa => (empresa.anoDeCriacao > 2000));
 
-### `npm test`
+console.log( anoDeCriacao );
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+#### Codigo usado na aplicação do curso
+> Codigo mostrando na pratica o uso do: .map e .filter
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+const teams_tech = [
+    {
+        nome: 'Front-End',
+    },
+]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+const [colaboradores, setColaboradores] = useState([])
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+const Salvar = (e) => {
+    e.preventDefault();
 
-### `npm run eject`
+    const dadosColocaborador = {
+        nome,
+        cargo,
+        imagem,
+        time,
+    }
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    adicionaNovoColaborador(dadosColaborador)
+}
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+const adicionaNovoColaborador = (colaborador) => {
+    setColaboradores([...colaboradores, colaborador])
+}
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+{teams_tech.map(team => 
+    <Cards
+        colaboradores={colaboradores.filter(colaborador => colaborador.time === team.nome)}
+    /> 
+)}
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
