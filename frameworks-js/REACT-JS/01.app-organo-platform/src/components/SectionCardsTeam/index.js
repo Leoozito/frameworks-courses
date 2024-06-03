@@ -10,7 +10,13 @@ const SectionCardsTeam = (props) => {
                 <h3 style={{borderColor: props.corPrimaria}}>{props.title}</h3>
             
                 {props.colaboradores.map(colaborador =>
-                    <CardsTeams nome={colaborador.nome} imagem={colaborador.imagem} cargo={colaborador.cargo}/>
+                    <CardsTeams 
+                        corDeFundo={props.corPrimaria}
+                        key={colaborador.nome} 
+                        nome={colaborador.nome} 
+                        imagem={colaborador.imagem} 
+                        cargo={colaborador.cargo}
+                    />
                 )}
             </section>
     )

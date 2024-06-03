@@ -10,8 +10,8 @@ export default function DropdownList(props) {
                     value={props.valor}
                     required={props.obrigatorio}
                 >
+                    <option value=""></option>
                     {props.items.map(items => 
-
                         <option key={items}>{items}</option>
                     )}
                 </select>
