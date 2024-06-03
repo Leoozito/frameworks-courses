@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Banner from './components/Banner';
 import Form from './components/Form';
 import SectionCardsTeam from './components/SectionCardsTeam';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -61,6 +62,8 @@ function App() {
           colaboradores={colaboradores.filter(colaborador => colaborador.time === team.nome)}
         />
       )}
+
+      <Footer/>
     </>
   );
 }

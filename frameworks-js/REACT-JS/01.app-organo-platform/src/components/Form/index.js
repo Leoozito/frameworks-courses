@@ -20,6 +20,10 @@ export default function Form(props) {
             imagem,
             time,
         })
+
+        setNome("")
+        setCargo("")
+        setImagem("")
     }
 
     return (
@@ -32,13 +36,13 @@ export default function Form(props) {
                         label="Nome" 
                         placeholder="Digite seu nome"
                         valor={nome}
-                        onAlterado={valor => setNome(valor)}
+                        onAlterao={valor => setNome(valor)}
                     />
                     <Input 
                         obrigatorio={true}
                         label="Cargo" 
                         placeholder="Digite seu cargo"
-                        valor={cargo}
+                        valord={cargo}
                         onAlterado={valor => setCargo(valor)}
                     />
                     <Input 

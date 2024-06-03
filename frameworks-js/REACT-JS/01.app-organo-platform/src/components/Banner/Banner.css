@@ -1,6 +1,8 @@
 .banner {
     background-color: #627BF7;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .banner img {
