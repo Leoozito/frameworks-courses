@@ -11,6 +11,7 @@ const SectionCardsTeam = (props) => {
             
                 {props.colaboradores.map(colaborador =>
                     <CardsTeams 
+                        aoDeletar={props.aoDeletar}
                         corDeFundo={props.corPrimaria}
                         key={colaborador.nome} 
                         nome={colaborador.nome} 
