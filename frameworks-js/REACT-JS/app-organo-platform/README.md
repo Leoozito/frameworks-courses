@@ -34,7 +34,8 @@ console.log( anoDeCriacao, colaboradores );
 
 > Nesta parte curso foi ensinado:
 
--   Closure
+-   O que é uma closure e como utilizá-la a seu favor;
+-   Diferença entre export e export default.
 
 Uma closure é um bloco dentro de uma função que nos permite colocar alguma informação dentro, por exemplo: colocar um bloco dentro da função .map
 
